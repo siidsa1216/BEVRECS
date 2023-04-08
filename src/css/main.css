@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ECE8E7 !important;
+}
+.header{
+    height: 8vh;
+    position: sticky;
+}
+.logo-name{
+    color: #A35709;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.notif_icon i, .profile_icon i{
+    color: #A35709;
+    font-size: 24px;
+    align-items: center;
+}
+.nav-link{
+    font-size: 10px !important;
+}
+.nav-link img{
+    width: 32px;
+    height: 32px;
+}
+.card-title{
+    font-size: 10px !important;
+}
+#sidebar{
+    height: 100vh;
+}
