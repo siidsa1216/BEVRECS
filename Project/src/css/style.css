@@ -146,13 +146,14 @@ header{
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
 }
-/*
+
+
 @media (max-width: 1199px) {
   .sidebar {
-    left: -300px;
+    left: -200px;
   }
 }
-*/
+
 
 .sidebar::-webkit-scrollbar {
   width: 5px;
@@ -422,6 +423,30 @@ header{
     padding-left: 5px;
 }
 
+/*--------------------------------------------------------------
+# menu
+--------------------------------------------------------------*/
+.btn-category .btn{
+  background-color: #FF8303;
+  color: white;
+  border-radius: 50px;
+}
+.btn-category .btn:hover{
+  background-color: #7a4005;
+}
+.category-tab .nav-pills .nav-item{
+  margin-left: 12px;
+}
+.category-tab .nav-pills .nav-item .nav-link{
+  border: 1px solid #FF8303;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+.category-tab .nav-pills .nav-item .nav-link.active{
+  background-color: #FF8303;
+  color: white;
+  border-radius: 50px;
+}
 
 /*--------------------------------------------------------------
 # Footer
