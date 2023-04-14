@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- favcon -->
+    <link href="/src/img/logo.png" rel="icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/virtual-select.min.css">
+    <!-- bootstrap js -->
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js" integrity="sha512-lxQ4VnKKW7foGFV6L9zlSe+6QppP9B2t+tMMaV4s4iqAv4iHIyXED7O+fke1VeLNaRdoVkVt8Hw/jmZ+XocsXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- main js -->
+    <script src="/src/js/main.js"></script>
+
+    <title>BevRecs-WELCOME</title>
+</head>
+<body >
+     <!-- ===========HEADER============== -->
+  <header class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#index.html" class="logo d-flex align-items-center px-2">
+        <img class="logo" src="/src/img/logo-with-name.png" alt="logo">
+        <i class='bx bx-menu toggle-sidebar-btn' ></i>
+      </a>
+    </div>
+     <!-- Search Bar -->
+    <div class="search-bar m-auto">
+      <form class="search-form d-flex align-items-center">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center mt-3 list-unstyled">
+          <!-- Search Icon when the screen is small-->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+          <!-- Search Icon when the screen is small end-->
+
+           <!-- cart-->
+           <li class="nav-item d-block m-auto px-4">
+              <a type="button" class="cart-btn" href="cart.html">
+                Cart(0)
+            </a>
+          </li>
+           <!-- cart end-->
+        </ul>
+      </nav>
+    <!-- End Search Bar -->
+</header>
+ <!-- ===========end of HEADER============== -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar" data-bs-hidden="false">
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link " href="recommendation.html">
+                <i class='bx bxs-cog'></i><span>Recommend</span>
+            </a>
+        </li><!-- Recommendation Nav -->
+          <!-- Menu Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#menu-nav" href="home.html">
+              <i class='bx bxs-food-menu' ></i></i><span>Menu</span>
+            </a>
+        </li><!-- End Menu Nav -->
+        </ul>
+      </aside><!-- End Sidebar-->
+
+
+
+</body>
+</html>

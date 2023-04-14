@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- favcon -->
+    <link href="/src/img/logo.png" rel="icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/virtual-select.min.css">
+    <!-- bootstrap js -->
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js" integrity="sha512-lxQ4VnKKW7foGFV6L9zlSe+6QppP9B2t+tMMaV4s4iqAv4iHIyXED7O+fke1VeLNaRdoVkVt8Hw/jmZ+XocsXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- main js -->
+    <script src="/src/js/main.js"></script>
+
+    <title>BevRecs-WELCOME</title>
+</head>
+<body >
+     <!-- ===========HEADER============== -->
+  <header class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#index.html" class="logo d-flex align-items-center px-2">
+        <img class="logo" src="/src/img/logo-with-name.png" alt="logo">
+        <i class='bx bx-menu toggle-sidebar-btn' ></i>
+      </a>
+    </div>
+     <!-- Search Bar -->
+    <div class="search-bar m-auto">
+      <form class="search-form d-flex align-items-center">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center mt-3 list-unstyled">
+          <!-- Search Icon when the screen is small-->
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+          <!-- Search Icon when the screen is small end-->
+
+           <!-- cart-->
+           <li class="nav-item d-block m-auto px-4">
+                <a type="button" class="cart-btn" href="cart.html">
+                    Cart(0)
+                </a>
+          </li>
+           <!-- cart end-->
+        </ul>
+      </nav>
+    <!-- End Search Bar -->
+</header>
+ <!-- ===========end of HEADER============== -->
+    <!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar" data-bs-hidden="false">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="recommendation.html">
+            <i class='bx bxs-cog'></i><span>Recommend</span>
+        </a>
+    </li><!-- Recommendation Nav -->
+        <!-- Menu Nav -->
+    <li class="nav-item">
+        <a class="nav-link" data-bs-target="#menu-nav" href="home.html">
+            <i class='bx bxs-food-menu' ></i></i><span>Menu</span>
+        </a>
+    </li><!-- End Menu Nav -->
+    </ul>
+    </aside><!-- End Sidebar-->
+
+    <!-- main container -->
+
+    <main id="main" class="main">
+        <section class="section menu rounded">
+          <!-- Nav for categories -->
+          <div class="row mb-2 mx-1 rounded bg-white category-tab-div">
+            <div class="col-12 py-2 category-tab">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold align-items-center" data-bs-toggle="pill" href="#coffee">COFFEE
+                    <br> <p class="text-center fw-light p-0 my-auto">3 menus</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="pill" href="#menu1">Category 2
+                    <br> <p class="text-center fw-light p-0 my-auto">0 menu</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <!-- menu items div display each category -->
+          <div class="tab-content bg-white rounded">
+            <div class="tab-pane container active py-2" id="coffee">
+              <div class="row g-1">
+                  <!-- menu items -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="card">
+                      <img src="/src/img/coffee.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <div class="d-flex">
+                          <p class="card-text">PHP <strong>50.00</strong></p>
+                        </div>
+                          <a class="btn add-to-cart btn-primary btn-sm mt-2" data-bs-toggle="offcanvas" href="#menuinformation" role="button" aria-controls="menuinformation">
+                            Add to Cart</a>
+
+                            <!-- offcanvas display menu Info -->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="menuinformation" aria-labelledby="menuinformation">
+                              <div class="offcanvas-header">
+                                <button type="button" class="btn btn-primary ">
+                                  Cart(0)
+                                </button>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+
+                              <form action="" class="order-form m-4">
+                                    <!-- image of the menu -->
+                                    <div class="imageholder justify-content-center">
+                                      <img class="img-thumbnail" src="/src/img/coffee.jpg" alt="menupic">
+                                    </div> 
+                                                          
+                                  <!-- menu name and price-->
+                                    <div class="menu_name_price">
+                                      <div class="d-flex justify-content-between">
+                                        <h4 class="menu_name ">Coffee</h4>
+                                        <h5 class="price">50.00</h5>
+                                      </div>
+                                    </div> <!-- menu name and price -->
+                                    
+                                    
+                                 <!-- size option -->
+                                <div class="size-option-div">
+                                  <div class="d-block size-option">
+                                    <h6 class="sizetxt fw-light">Size</h6>
+                                      <!-- options of Sizes form -->
+                                      <div class="d-flex justify-content-center g-2">
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="regular"> Regular
+                                            <label class="form-check-label" for="regular"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="medium">Medium
+                                            <label class="form-check-label" for="medium"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="large">Large
+                                            <label class="form-check-label" for="large"></label>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div> <!-- size option end -->
+                                  <!-- addons option -->
+                                <div class="addons-option-div">
+                                  <div class="d-block add-on-option mt-2">
+                                    <h6 class="sizetxt fw-light">Add Ons</h6>
+                                      <div class="d-block">
+                                        <div class="form-check d-flex justify-content-between">
+                                          <div>
+                                          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                          <label class="form-check-label fw-bold">Expresso Shot</label>
+                                          </div>
+                                          <div>
+                                            <h6 class="priceAddOns">10.00</h6>
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="form-check d-flex justify-content-between">
+                                          <div>
+                                          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                          <label class="form-check-label fw-bold">Expresso Shot</label>
+                                          </div>
+                                          <div>
+                                            <h6 class="priceAddOns">10.00</h6>
+                                          </div>
+                                        </div>
+                                        <div class="form-check d-flex justify-content-between">
+                                          <div>
+                                          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                          <label class="form-check-label fw-bold">Expresso Shot</label>
+                                          </div>
+                                          <div>
+                                            <h6 class="priceAddOns">10.00</h6>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </div> <!-- addons option end -->
+                                <div class="text-center col-12 d-grid">
+                                  <button type="submit" class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                                </div>
+
+                                <div class="ingredient_list mt-2">
+                                  <h6 class="sizetxt fw-light">Ingredients</h6>
+                                  <div class="d-flex">
+                                    <p class="ingredient_name px-3">coffee beans</p>
+                                    <p class="ingredient_name px-3">sugar</p>
+                                    <p class="ingredient_name px-3">non-fat milk</p>
+                                  </div>
+                                </div>
+                              </form>
+
+                            </div>  
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <div class="card">
+                      <img src="/src/img/coffee.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <div class="d-flex">
+                          <p class="card-text">PHP <strong>50.00</strong></p>
+                        </div>
+                          <a href="#" class="btn add-to-cart btn-primary btn-sm mt-2">Add to Cart</a> <!--ADD TO CART FUNCTION-->
+                      </div>
+                    </div>
+                  </div>
+                    <!-- menu items end -->
+              </div>
+            </div>
+
+            <div class="tab-pane container fade py-2" id="menu1">
+              <div class="row g-1">
+                <!-- menu items -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                  <div class="card">
+                    <img src="/src/img/coffee.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Coffee</h5>
+                      <div class="d-flex">
+                        <p class="card-text">PHP <strong>50.00</strong></p>
+                      </div>
+                        <a class="btn btn-sm mt-2 add-to-cart" data-bs-toggle="offcanvas" href="#menuinformation" role="button" aria-controls="menuinformation">
+                          Add to Cart</a>
+
+                          <!-- offcanvas display menu Info -->
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="menuinformation" aria-labelledby="menuinformation">
+                            <div class="offcanvas-header">
+                              <button type="button" class="btn btn-primary ">
+                                Cart(0)
+                              </button>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <form action="" class="order-form m-4">
+                                  <!-- image of the menu -->
+                                  <div class="imageholder justify-content-center">
+                                    <img class="img-fluid" src="/src/img/coffee.jpg" alt="menupic">
+                                  </div> 
+                                                        
+                                <!-- menu name and price-->
+                                  <div class="menu_name_price">
+                                    <div class="d-flex justify-content-between">
+                                      <h4 class="menu_name ">Coffee</h4>
+                                      <h5 class="price">50.00</h5>
+                                    </div>
+                                  </div> <!-- menu name and price -->
+                                  
+                                  
+                               <!-- size option -->
+                              <div class="size-option-div">
+                                <div class="d-block size-option">
+                                  <h6 class="sizetxt fw-light">Size</h6>
+                                    <!-- options of Sizes form -->
+                                    <div class="d-flex justify-content-center g-2">
+                                        <div class="form-check">
+                                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="regular"> Regular
+                                          <label class="form-check-label" for="regular"></label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="medium">Medium
+                                          <label class="form-check-label" for="medium"></label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="large">Large
+                                          <label class="form-check-label" for="large"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div> <!-- size option end -->
+                                <!-- addons option -->
+                              <div class="addons-option-div">
+                                <div class="d-block add-on-option mt-2">
+                                  <h6 class="sizetxt fw-light">Add Ons</h6>
+                                    <div class="d-block">
+                                      <div class="form-check d-flex justify-content-between">
+                                        <div>
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                        <label class="form-check-label fw-bold">Expresso Shot</label>
+                                        </div>
+                                        <div>
+                                          <h6 class="priceAddOns">10.00</h6>
+                                        </div>
+                                      </div>
+                                    
+                                      <div class="form-check d-flex justify-content-between">
+                                        <div>
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                        <label class="form-check-label fw-bold">Expresso Shot</label>
+                                        </div>
+                                        <div>
+                                          <h6 class="priceAddOns">10.00</h6>
+                                        </div>
+                                      </div>
+                                      <div class="form-check d-flex justify-content-between">
+                                        <div>
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                        <label class="form-check-label fw-bold">Expresso Shot</label>
+                                        </div>
+                                        <div>
+                                          <h6 class="priceAddOns">10.00</h6>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div> <!-- addons option end -->
+                              <div class="text-center col-12 d-grid">
+                                <button type="submit" class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                              </div>
+
+                              <div class="ingredient_list mt-2">
+                                <h6 class="sizetxt fw-light">Ingredients</h6>
+                                <div class="d-flex">
+                                  <p class="ingredient_name px-3">coffee beans</p>
+                                  <p class="ingredient_name px-3">sugar</p>
+                                  <p class="ingredient_name px-3">non-fat milk</p>
+                                </div>
+                              </div>
+                            </form>
+
+                          </div>  
+                      </div>
+                  </div>
+                </div>
+                  <!-- menu items end -->
+            </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+
+
+
+
+</body>
+</html>
